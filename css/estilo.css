@@ -1,0 +1,746 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+
+
+
+/* ---- reset ------*/
+html, body, div, a, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+body{
+  background-color: lightgray;
+}
+
+.acceder button{
+    padding: 5px;
+	padding-top: 8px;
+    margin-right: 10px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.4);
+    border-bottom: 2px solid;
+    border-color: #6779a2;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*navisto*/
+div.navsito img{
+    width: 100%;
+}
+
+div.navsito {
+	z-index: 9999;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    left:-10%;
+    flex-shrink: 0;
+    width: 6%;
+    max-width: 80px;
+    min-width: 30px;
+    flex-basis: 230px;
+    transition: all 1s ease;
+    
+}
+
+div.activation{
+    left: 5%;    
+}
+
+
+ul.navsito li{
+    margin: 30% 0%;
+    padding: 1% 0%;
+    width: auto;
+}
+
+
+div.navsito a img:hover{
+    animation: shake 1s;
+}
+
+
+
+.menu-button {
+	z-index: 9999;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  
+  border-radius: 10px;
+  transition: 1s;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.acceder{
+    z-index: 9999;
+    position: fixed;
+    right: 0;
+}
+
+.carousel-control.left {
+    z-index:7
+}  
+.carousel-control.right {
+    z-index:7
+}
+div.carousel, {
+	z-index: 1 !important;
+
+}
+
+.carousel-control{
+    color: #000;
+}
+.carousel-control:hover{
+    color: #000;
+}
+
+.carousel-control.active{
+    color: #000;
+}
+.carousel-caption{
+    
+    font-family: 'Black Han Sans', sans-serif;
+    display: flex;
+
+}
+
+.carousel-caption img{
+    width: 30%;
+    height: 30%;
+}
+
+.carousel-caption{
+    align-items: center;
+	text-shadow:  0 2px 4px rgba(0,0,0,.8);
+}
+.carousel-caption > div{
+    margin-right: 2%;
+}
+
+.carousel-caption h3{
+    font-size: 45px;
+}
+.carousel-caption p{
+    font-size: 20px;
+	font-weight: 100;
+}
+
+.modal-title{
+	font-family: 'Black Han Sans', sans-serif;
+	text-align: center;
+}
+.modal-header{
+	
+	box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.4);
+}
+
+.modal-body{
+ font-family: 'Josefin Sans', sans-serif;
+}
+
+.modal-body label{
+	padding-top: 8px;
+}
+
+.modal-footer{
+	border-top: none;
+}
+
+button{
+	
+}
+
+div.titulo-home{
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+    width: 50%;
+    margin-top: 0.5%;
+    margin-left: 25%;
+	text-shadow:  0 4px 10px rgba(100,100,100,1);
+
+}
+
+
+.item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.menu-line {
+  margin: 0;
+  display: block;
+  width: 80%;
+  height: 12%;
+  background: #000;
+  transition: 1s;
+  box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.4);
+}
+
+.menu-line::before,
+.menu-line::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  box-shadow: 1px 1px 5px rgba(50, 50, 50, 0.4);
+  position: relative;
+  transition: 1s;
+}
+.menu-line::before {
+  top: -220%;
+}
+.menu-line::after {
+  top: 120%;
+}
+
+/* Menu Button 2 animation */
+#menu2.active {
+  transform: rotate(360deg);
+  border-radius: 50%;
+}
+#menu2.active .menu-line::before {
+  top: 0;
+  
+  transform: rotate(45deg);
+}
+#menu2.active .menu-line::after {
+  top: -100%;
+  transform: rotate(-45deg);
+}
+#menu2.active .menu-line {
+  background: transparent;
+    box-shadow:none  
+}
+
+
+div#mapaa{
+	width: 100%;
+	min-height: auto;
+}
+/*tabs*/
+
+div.viaje_perfecto{
+    height: 100vh;
+	
+	width: 100%;
+}
+div.viaje{
+    display: flex;
+	width: 100%;
+}
+div.viaje p{
+    margin: 0;
+}
+div.info{
+	overflow-y: hidden;
+    width: 49%;
+    background-color: rgba(240,240,240,0.95);
+    padding: 2%;
+    box-sizing: border-box;
+	height: auto;
+}
+
+div.info >div{
+    width: 100%;
+    height: auto;
+}
+
+
+.titulo-primero{
+    margin: 0;
+    padding-top: 35%;
+    text-align: center;
+}
+
+
+.imagens{
+width: 51%;
+	height: 100%;
+}
+.imagens img{
+    width: 100%;
+	height: 100%;
+}
+ul li{
+     list-style:none;    
+}
+
+.viaje p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+
+.viaje p.titulo{
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+li.montana{
+    position: absolute;
+    margin-top:5%;
+    margin-left: 2%;
+    transition:all 1s ease;
+    
+}
+li.forest{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 30%;
+    transition:all 1s ease;
+}
+
+
+
+li.playa{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 5%;
+    transition:all 1s ease;
+}
+
+li.ciudad{
+  position: absolute;
+  margin-top: 32%;
+  margin-left: 35%;
+    transition:all 1s ease;
+}
+
+
+.tabs li{
+    width: 10%;
+}
+.tabs li a img{
+    position: absolute;
+    width: 100%;
+    border: 5px solid transparent;
+    border-color: rgba(128,128,128, 0.5);
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+div.display-icon-text{
+    display: flex;
+}
+
+div.display-icon-text p{
+    width: 60%;
+}
+
+div.display-icon-text img{
+    width: 18%;
+    margin: auto;
+    margin-top: 1%;
+    height: 18%;
+}
+
+p.contenido-viaje{
+    padding-top: 10px;
+    text-align: justify;
+}
+
+.p90{
+    padding-top:2%;
+    width: 60%;
+    margin: auto;
+        
+}
+
+div.arenita-playita{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+div.arenita-playita img{
+    width: 15%;
+    height: 15%;
+}
+div.bosquecito{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+div.bosquecito > div{
+    display: flex;
+    margin-left: 20%;
+    margin-top: 1%;
+    align-items: center;
+}
+div.bosquecito > div img{
+    width: 5%;
+    height: 10%;
+ 
+}
+div.bosquecito > div p{
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+div.ciudadpueblo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+    
+}
+
+div.ciudadpueblo > div{
+    display: flex;
+    margin-top: 2%;
+    align-items: center;
+}
+
+div.ciudadpueblo > div p{
+    width: 80%;
+    margin: 0% 2% 0% 2%;
+    text-align: center
+}
+
+div.ciudadpueblo > div img{
+    width: 10%;
+    height: 10%;
+}
+
+
+p.leyenda-img{
+    font-size: 12px;
+    color: gray;
+    
+}
+
+
+/*galleria*/
+
+div#general{
+display: flex;
+    
+}
+
+.te-P{
+    font-size: 20px;
+    font-family: 'Oxygen', sans-serif;
+    padding: 0% 3%;
+    
+}
+
+div.texto >div{
+    margin-top: 20%;
+}
+
+div.texto{
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(136,196,196);
+    z-index: 2;
+    box-shadow: 5px 0px 10px rgba(50, 50, 50, 0.9);
+}
+
+
+
+div#galleria { 
+    background-image: url(../images/patron.jpg);
+    background-size: 250px;
+    width: 70%;
+    margin-left: 30%;
+    padding: 0px 0.5%;
+    padding-top: 2%;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-items: stretch;
+    -webkit-justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+div#galleria img {  
+    position: static !important;
+    bottom: auto !important;
+    width: 100%;
+    display: block;
+    height: auto;
+} 
+
+#galleria > div{
+    display: -webkit-flex;
+    -webkit-align-items: flex-end;
+    -webkit-justify-content: space-around;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-right: 5px;
+    margin-left:5px;
+    margin-bottom: 10px;
+    float: left;
+    box-shadow: 5px 5px 10px rgba(50, 50, 50, 0.4);
+}
+
+#galleria:after {
+    -ms-flex: 20 150px;
+    -webkit-flex: 20 150px;
+    flex: 20 150px;
+    display: block;
+    content: ' ';
+    height: 1px;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(000,000,000, 0.5);
+    overflow: hidden;
+    width: 100%;
+    height: 0%;
+    transition: .6s ease;
+    
+}
+
+#galleria > div:hover .overlay{
+    height: 40%;
+}
+
+.textoi{
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+      white-space: nowrap;
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+
+}
+
+
+
+/*Efectos*/
+ ul.tabs li a:hover img{
+    
+     border:5px solid rgba(255,255,255,0.8);
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -webkit-transition: border-color 1s ease;
+         -moz-transition: border-color 1s ease;
+           -o-transition: border-color 1s ease;
+          -ms-transition: border-color 1s ease;
+              transition: border-color 1s ease;
+     
+     
+}
+
+li.activeLi{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 25%; 
+    z-index: 100;
+    transition:all 1s ease;
+}
+
+li.activeLi img{
+    border:5px solid rgba(255,255,255,0.8);
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -webkit-transition: border-color 1s ease;
+         -moz-transition: border-color 1s ease;
+           -o-transition: border-color 1s ease;
+          -ms-transition: border-color 1s ease;
+              transition: border-color 1s ease;
+}
+
+
+
+@keyframes shake{
+      0% { transform: rotate(0deg); }
+  10% { transform:  rotate(-4deg); }
+  30% { transform: rotate(6deg); }
+  50% { transform:  rotate(-6deg); }
+  70% { transform:  rotate(4deg); }
+  80% { transform: rotate(-2deg); }
+  100% { transform:  rotate(0deg); }
+}
+
+
+/*media queries*/
+
+@media only screen and (min-width: 1200px){
+    #galleria:after {
+        -ms-flex: 500 300px;
+        -webkit-flex: 500 300px;
+        flex: 500 300px;
+    }
+}
+@media only screen and (min-width: 992px){
+    #galleria:after {
+        -ms-flex: 100 250px;
+        -webkit-flex: 100 250px;
+        flex: 100 250px;
+    }
+}
+@media only screen and (min-width: 768px){
+    
+   
+    #galleria:after {
+        -ms-flex: 50 200px;
+        -webkit-flex: 50 200px;
+        flex: 50 200px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+div.imagens{
+    width: 100%;    
+    }
+    div.info{
+        width: 100%;
+    }
+    
+  
+}
+
+
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+    
+   
+    
+    div.viaje{
+        flex-direction: column;
+    }
+    
+    div.imagens{
+    width: 100%;
+		height: 100%;
+    }
+    div.info{
+        width: 100%;
+        padding: 0.5%;
+    }
+    
+    .tabs  li{
+        width: 20%;
+    }
+    li.montana{
+        position: absolute;
+        margin-top:5%;
+        margin-left: 8%;
+        transition:all 1s ease;
+
+    }
+    li.forest{
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 60%;
+        transition:all 1s ease;
+    }
+
+
+
+    li.playa{
+        position: absolute;
+        margin-top: 70%;
+        margin-left: 10%;
+        transition:all 1s ease;
+    }
+
+    li.ciudad{
+      position: absolute;
+      margin-top: 75%;
+      margin-left: 65%;
+        transition:all 1s ease;
+    }
+    
+    li.activeLi{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 25%;
+    width: 50%; 
+    z-index: 100;
+    transition:all 1s ease;
+}
+
+li.activeLi img{
+    border:5px solid rgba(255,255,255,0.8);
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -webkit-transition: border-color 1s ease;
+         -moz-transition: border-color 1s ease;
+           -o-transition: border-color 1s ease;
+          -ms-transition: border-color 1s ease;
+              transition: border-color 1s ease;
+}
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+    
+   div.info p{
+    font-size: 12px;
+    padding-top: 1%;
+}
+    div.info p.titulo{
+        font-size: 20px;
+        margin-bottom: 0;
+        padding-top: 0.5%;
+        margin-top: 0.5%;
+    }
+    div.bosquecito{
+        margin-bottom: 0;
+    }
+    div.info{
+        padding: 0% 0.5%;
+    }
+    
+    div.ciudadpueblo > div{
+    margin-top: 0;
+    align-items: center;
+}
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+    div.info p{
+    font-size: 15px;
+    padding-top: 1%;
+}
+    div.info p.titulo-primero{
+        padding-top: 40%;
+    }
+    div.ciudadpueblo{
+        margin-bottom: 1%;
+    }
+}
